@@ -251,9 +251,19 @@ print(list(mp)) #Then it will print out all the elements + 5
 
 y = [1,5,67,4,5,58,67,8]
 mp2 = filter(lambda i: i % 2 == 0, y) #This will now only return the numbers that are even
-print(mp(list))
+print(list(mp2))
 
 #F strings
 x = f"hello {5 + 5}" #Like normal strings but wuth f strings u can use curly brackets to implement elements like variables and integers etc
+
+#Classes
+class myclass: #A class is almost like a blueprint
+    def __init__(self): #Constructor to initialize instance variables
+        self.name = 'jack' #Defines name as an instance variable
+    def greet(self): #Uses the instance variable name in the function
+        print(f'Hello {self.name}')#Uses f strings to put a variable in a string
+
+instance = myclass() # Create an instance of myclass
+instance.greet() # Call the greet method on the instance
 
 
